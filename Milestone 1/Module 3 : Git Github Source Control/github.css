@@ -16,6 +16,11 @@ h1{
     background-color: gray;
     background-position: center;
 } */
+h3{
+    text-align: center;
+    text-decoration: underline;
+    background-color: bisque; 
+}
 .mixed{
     color: cornflowerblue;
     background-color: black;
