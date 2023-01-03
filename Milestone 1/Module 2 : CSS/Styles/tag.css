@@ -1,0 +1,34 @@
+.ss{
+    background-image: url(../images/nature.jpg);
+    width: 400px;
+    height: 300px;
+    color: beige;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-decoration: underline wavy red;
+}
+.mixed{
+    color: cornflowerblue;
+    background-color: black;
+    width: fit-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 5px 5px skyblue;
+}
+#CSS{
+    color: red;
+    text-align: center;
+    background-color: darkgrey;
+}
+.course{
+    color: yellowgreen;
+}
+li{
+    color: teal;
+}
