@@ -1,0 +1,41 @@
+.blog{
+    background-color: burlywood;
+    color: brown;
+    border: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+}
+/* .ss{
+    width: 200px;
+    height: 40px;
+    color: beige;
+    background-color: gray;
+    background-position: center;
+} */
+.mixed{
+    color: cornflowerblue;
+    background-color: black;
+    width: fit-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 5px 5px skyblue;
+}
+#CSS{
+    color: red;
+    text-align: center;
+    background-color: darkgrey;
+}
+.course{
+    color: yellowgreen;
+}
+li{
+    color: teal;
+}
