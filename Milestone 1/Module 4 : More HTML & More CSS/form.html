@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Ghor</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="table.html">
+    <link rel="stylesheet" href="semantic.html">
+    <link rel="stylesheet" href="audio-video.html">
+    <style>
+        label{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="semantic.html">Semantic</a></li>
+                <li><a href="audio-video.html">Audio & Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Welcome to SS Pitha Ghor...</h2>
+    <form>
+        <label for="name">
+            Your Username : 
+            <input id="name" type="text" placeholder="Your Username">
+        </label>
+        <label for="email">
+            Your Email : 
+            <input id="email" type="text" placeholder="Your Email">
+        </label>
+        <br>    
+        <fieldset>
+            <legend>
+                Pick One Option
+            </legend>
+            <label for="2018">
+                <input type="radio" name="ss" id="2018">
+                $2018
+            </label>
+            <label for="2019">
+                <input type="radio" name="ss" id="2019">
+                $2019
+            </label>
+            <label for="2020">
+                <input type="radio" name="ss" id="2020">
+                $2020
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Pick One or More Option
+            </legend>
+            <label for="M">
+                <input type="checkbox" name="m" id="M">
+                M
+            </label>
+            <label for="L">
+                <input type="checkbox" name="m" id="L">
+                L
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Doesn't need anyone</legend>
+            <textarea name="" id="" cols="70" rows="2"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

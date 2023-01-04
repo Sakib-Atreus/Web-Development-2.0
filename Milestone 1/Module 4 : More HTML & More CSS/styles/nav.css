@@ -1,0 +1,43 @@
+nav > ul{
+    display: flex;  
+}
+nav li{
+    list-style: none;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+nav li a{
+    text-decoration: none;
+    color: darkorange;
+}
+nav li:hover{
+    background-color: lightgrey;
+}
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    padding: 0px;
+    
+}
+nav li:hover > .dropdown{
+    display: block;
+}
+nav li .dropdown2{
+    display: none;
+    background-color: lightgrey;
+    position: absolute;
+    padding: 0px;
+}
+nav li:hover > .dropdown2{
+    display: block;
+}
+nav li .groups{
+    display: none;
+    background-color: lightcyan;
+    padding: 0px;
+    position: absolute;
+}
+nav li:hover > .groups{
+    display: block;
+}
