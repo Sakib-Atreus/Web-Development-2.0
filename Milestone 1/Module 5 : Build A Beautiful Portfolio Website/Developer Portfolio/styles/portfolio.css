@@ -1,6 +1,10 @@
 * {
     margin: 0px;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
 }
 
 .btn-primary {
@@ -18,7 +22,8 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    /* margin: 50px 200px; */
+    padding: 50px 200px;
 }
 
 .nav-title {
@@ -241,7 +246,7 @@ section {
 }
 
 input{
-    height: 64px;
+    height: 4px;
 }
 
 .contact a{
