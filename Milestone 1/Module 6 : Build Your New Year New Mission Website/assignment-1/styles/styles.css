@@ -80,6 +80,20 @@ span {
     font-weight: 70px;
 }
 
+#you-need{
+    margin-bottom: 40px;
+}
+
+.knowledge{
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+}
+
+.knowledge-p{
+    margin: 30px;
+}
+
 .main-section {
     display: flex;
     gap: 100px;
