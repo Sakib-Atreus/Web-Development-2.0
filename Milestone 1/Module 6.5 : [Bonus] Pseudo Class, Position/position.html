@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* .swimming{
+            position: relative;
+        } */
+        .swimming div{
+            border: 2px dashed darksalmon;
+            width: 200px;
+        }
+        /* #ring{
+            position: relative;
+            left: 30px;
+            top: -30px;
+        } */
+        /* #ring{
+            position: absolute;
+            left: 30px;
+            top: -40px;
+        } */
+        /* #ring{
+            position: sticky;
+            left: 0px;
+            top: 100px;
+        } */
+        /* #ring{
+            position: fixed;
+            left: 0px;
+            top: 100px;
+        } */
+        #ring{
+            position: relative;
+            z-index: 2;
+        }
+        #water{
+            position: relative;
+            z-index: 1;
+            top: -80px;
+        }
+        #boy{
+            position: relative;
+            z-index: 3;
+            top: 100px;
+        }
+        .dummy{
+            width: 250px;
+            height: 150px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>I can't find you</h1>
+        <h1>I can't find me</h1>
+        <h1>I can't find us</h1>
+    </section>
+    <section class="swimming">
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/ring.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    <section>
+        <h3>Hey BoSS</h3>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+</body>
+</html>

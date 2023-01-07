@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1{
+            color: chocolate;
+            background-color: darkgray;
+            width: max-content;
+            height: max-content;
+        }
+        h1:hover{
+            color: lightgreen;
+            background-color: bisque;
+        }
+        input:focus{
+            color: navy;
+        }
+        a:visited{
+            color: darkslategray;
+        }
+        li:first-child{
+            color: aqua;
+        }
+        li:last-child{
+            background-color: aqua;
+        }
+        li:nth-child(2n){
+            color: darkcyan;
+            background-color: bisque;
+        }
+        li:nth-child(2n-1){
+            color: brown;
+            background-color: lavender;
+        }
+        h3::before{
+            content: 'Hey ';
+            background-color: lightpink;
+        }
+        h3::after{
+            content: ' Got it?';
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Black Stupid</h1>
+
+    <input type="text" name="" id="">
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <a href="https://www.blackstupid.com">Amazon</a>
+    <br>
+    <h3>Don't Upset-1</h3>
+    <h3>Don't Upset-2</h3>
+    <h3>Don't Upset-3</h3>
+    <h3>Don't Upset-4</h3>
+    <h3>Don't Upset-5</h3>
+    <ul>
+        <li>Nothing Impossible-1</li>
+        <li>Nothing Impossible-2</li>
+        <li>Nothing Impossible-3</li>
+        <li>Nothing Impossible-4</li>
+        <li>Nothing Impossible-5</li>
+    </ul>
+</body>
+</html>
