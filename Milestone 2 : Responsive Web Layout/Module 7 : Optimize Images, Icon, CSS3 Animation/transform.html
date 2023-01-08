@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        .box-container, .inner {
+            width: 150px;
+            height: 150px;
+            border: 3px solid limegreen;
+        }
+
+        .box-container{
+            background-color: rgb(56, 55, 53);
+        }
+
+        .inner{
+            background-color: rgb(17, 157, 245);
+            /* transform: scale(0.5); */
+            transform: translate(50px) scale(0.5) rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transformer I'm Coming...</h1>
+
+    <div class="box-container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box-container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box-container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+
+</html>
