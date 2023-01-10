@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 3px dotted purple;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .box{
+            border: 3px dashed limegreen;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container2{
+            width: 400px;
+            height: 400px;
+            border: 3px dotted rgb(56, 6, 236);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .box2{
+            border: 3px dashed rgb(28, 238, 238);
+            width: 100px;
+            height: 300px;
+        }
+        #boss{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box-&</div>
+        <div class="box">Box-&</div>
+        <div class="box">Box-&</div>
+    </div>
+
+    <div class="container2">
+        <div class="box2">Boss-1</div>
+        <div class="box2" id="boss">Boss-2</div>
+    </div>
+</body>
+</html>

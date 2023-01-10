@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 5px solid lightsalmon;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        @media screen and (max-width: 576px) {
+            .food{
+                background-color: lightskyblue;
+            }
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .food{
+                background-color: lightgreen;
+            }
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-1</h2>
+            <h4>price 100tk</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum odio reiciendis veniam itaque perferendis. Porro animi asperiores harum sapiente.</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-2</h2>
+            <h4>price 200tk</h4>
+            <p>Quo non consequatur reprehenderit excepturi nemo hic quam a minima quaerat, magni nesciunt eius! Ipsa est ea officiis placeat voluptates!</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-3</h2>
+            <h4>price 300tk</h4>
+            <p>Facilis assumenda distinctio magnam culpa reprehenderit beatae, dicta, cumque, quae eaque minus aspernatur laudantium. Quas, consequuntur! Dolores nisi explicabo distinctio.</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-4</h2>
+            <h4>price 400tk</h4>
+            <p>Natus consequuntur placeat exercitationem ratione officiis velit minima non excepturi, commodi odit odio aspernatur delectus atque voluptatibus assumenda consectetur rem?</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-5</h2>
+            <h4>price 500tk</h4>
+            <p>Illo quisquam, quibusdam itaque exercitationem assumenda explicabo placeat, hic, magnam quam commodi cumque minus voluptatem optio repellat! Beatae, esse accusantium!</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-6</h2>
+            <h4>price 600tk</h4>
+            <p>Similique provident optio non ea, ullam atque hic magni quaerat nobis et impedit quis eligendi deleniti neque, amet aperiam consectetur?</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-7</h2>
+            <h4>price 700tk</h4>
+            <p>Repellat nesciunt aspernatur, at quidem iste ex voluptatem nobis consectetur. Nisi sit quisquam eligendi et molestiae, error sint accusamus voluptatibus!</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-8</h2>
+            <h4>price 800tk</h4>
+            <p>Quis similique quaerat unde dolor possimus qui. Eaque natus cum vel doloribus voluptatibus omnis temporibus incidunt quidem amet? Cupiditate, quaerat!</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-9</h2>
+            <h4>price 900tk</h4>
+            <p>Sapiente consectetur hic perferendis! Impedit exercitationem ea quam accusantium, ipsum, nesciunt laborum reprehenderit itaque sapiente repudiandae voluptatum recusandae? At, debitis?</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-10</h2>
+            <h4>price 1000tk</h4>
+            <p>Ducimus, perspiciatis, debitis nam blanditiis et mollitia dolor excepturi expedita obcaecati recusandae rerum iusto, ad laudantium cupiditate tenetur incidunt est!</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-11</h2>
+            <h4>price 1100tk</h4>
+            <p>Sequi possimus nostrum, ad, aut temporibus ea nihil eos sapiente doloribus, quas qui corporis veniam eveniet molestiae quasi neque. Exercitationem.</p>
+            <input type="button" value="Order Now">
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <h2>item-12</h2>
+            <h4>price 1200tk</h4>
+            <p>Consequatur obcaecati dolorum adipisci, distinctio veniam ad, itaque, voluptatibus quas libero expedita delectus eveniet omnis alias deserunt harum? Eaque, saepe.</p>
+            <input type="button" value="Order Now">
+        </div>
+    </div>
+</body>
+</html>
