@@ -1,0 +1,53 @@
+/* Body & Main Styles */
+body{
+    width: 870px;
+}
+main{
+    width: 870px;
+}
+/* Header Styles Start */
+header{
+    align-items: center;
+}
+.navigation-bar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.navigation-bar a{
+    text-decoration: none;
+}
+.right-nav-bar{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+/* Start Your Journey Section Styles Start */
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.first-section-right-div{
+    background-image: url("../images/circledesign.svg");
+    background-repeat: no-repeat;
+}
+/* Logo Section Styles Start */
+.logo-section{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+/* Popular Collection Section Styles Start */
+.popular-collection-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/* Features Section Styles Start */
+.features-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* Footer Styles Start */
+footer{
+    background: #0A0826;
+    color: #FFFFFF;
+}
