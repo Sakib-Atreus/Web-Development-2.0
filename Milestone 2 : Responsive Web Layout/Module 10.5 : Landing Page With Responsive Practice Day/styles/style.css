@@ -46,6 +46,11 @@ main {
     gap: 8px;
 }
 
+hr{
+    color: #787885;
+    border-radius: 10px;
+}
+
 /* Header Styles Start */
 header {
     align-items: center;
@@ -103,7 +108,7 @@ header {
     grid-template-columns: repeat(7, 1fr);
     gap: 60px;
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 /* Popular Collection Section Styles Start */
