@@ -134,7 +134,7 @@ header {
 
 .responsive-btn {
     position: absolute;
-    top: 88%;
+    top: 82%;
     left: -10%;
 }
 
@@ -161,6 +161,36 @@ header {
     font-size: 12px;
     font-weight: 500;
 }
+
+/*  */
+.construct{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.c-img img{
+    width: 100%;
+}
+
+/*  */
+.service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.service-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #131313;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*  */
 
 .f-list-title {
     background: #FFFFFF;
@@ -226,11 +256,11 @@ header {
 
 .winner:hover {
     animation: skew 3s infinite;
-    transform: skew(20deg);
+    transform: skew(27deg);
     animation-direction: alternate;
     opacity: .7;
     background-color: lightblue;
-    border: 1px dashed red;
+    border: 2px dashed black;
 }
 
 @keyframes skew {
@@ -321,6 +351,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
+        margin-top: 10px;
     }
 
     .header-top {
@@ -414,5 +445,33 @@ footer {
         align-items: center;
         gap: 33px;
     }
+
+    /*  */
+.construct{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.c-img img{
+    width: 100%;
+}
+
+/*  */
+.service{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.service-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #131313;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 }
