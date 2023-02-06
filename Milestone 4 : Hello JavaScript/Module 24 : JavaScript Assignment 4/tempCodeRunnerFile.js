@@ -1,0 +1,1 @@
+gemsToDiamond(1, 1, 1)
