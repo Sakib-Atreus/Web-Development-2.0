@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Milestone 3 : CSS Frameworks (Bootstrap)/Module 16.5 : HTML CSS Bootstrap Bonus/jaan.js"
+            // "program": "${workspaceFolder}/Milestone 3 : CSS Frameworks (Bootstrap)/Module 16.5 : HTML CSS Bootstrap Bonus/jaan.js"
+            "program": "${file}"
         }
     ]
 }
