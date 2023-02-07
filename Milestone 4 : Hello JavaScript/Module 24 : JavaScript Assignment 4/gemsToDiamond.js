@@ -22,7 +22,7 @@
 
 function gemsToDiamond(number1, number2, number3){
     if(typeof number1 !== 'number' || typeof number2 !== 'number' || typeof number3 !== 'number'){
-        return 'Please input a integer number';
+        return 'Please input an integer number';
     }
     
     const powerOfNumber1 = number1 * 21;

@@ -1,6 +1,6 @@
 function mindGame(positiveNumber){
     if(typeof positiveNumber !== 'number'){
-        return 'Please input a integer number.';
+        return 'Please input an integer number.';
     }
     let numberMul = positiveNumber * 3;
     let numberSum = numberMul + 10;
