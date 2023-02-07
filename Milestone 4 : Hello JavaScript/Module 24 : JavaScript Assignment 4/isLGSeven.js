@@ -1,13 +1,15 @@
-function isLGSeven(number){
-    if(typeof number !== 'number'){
+function isLGSeven(number) {
+    if (typeof number !== 'number') {
         return 'Please input an integer number';
     }
-    const check = number - 7;
-    if(check < 7){
-        return check;
-    }
-    else{
-        return number * 2;
+    else {
+        const check = number - 7;
+        if (check < 7) {
+            return check;
+        }
+        else {
+            return number * 2;
+        }
     }
 }
 

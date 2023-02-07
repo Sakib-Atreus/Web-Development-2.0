@@ -16,22 +16,32 @@
 // findingBadData(data);
 
 
-let count = 0;
 function findingBadData(array){
-    if(!Array.isArray(array)){
-        return 'Please input an array.';
-    }
-    for(let i = 0; i < array.length; i++){
-        if(array[i] < 0){
-            count += 1;
-            console.log(array[i])
-         }
-    }
-    console.log("Total number: ", count)
+    
+    // for(let check = 0; check < array.length; check++){
+    //     if(!Array.isArray(array)){
+    //         return 'Please input an array.';
+    //     }
+    // }
+    
+        let count = 0;
+        for(let i = 0; i < array.length; i++){
+            if(!Array.isArray(array) || typeof array[i] !== 'number'){
+                return 'Please input an array and integer value.';
+            }
+            else{
+                if(array[i] < 0){
+                    count += 1;
+                }
+            }
+        }
+        // console.log(count)
+        return count;
 }
 
-const data = [10, 20, -2, -3, 7];
-findingBadData(data);
+const data = findingBadData([4, -9, -5, 33, 1]);
+// findingBadData(data);
+console.log(data);
 
 // let count = 0;
 // function findingBadData(array) {
