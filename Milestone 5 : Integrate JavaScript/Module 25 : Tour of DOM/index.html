@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main id="main-content">
+        <h1>My Awesome DOM</h1>
+        <ul>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Bye Bye</li>
+        </ul>
+        <section>
+            <h1 id="fruits-title">Fruits List</h1>
+            <ul id="list">
+                <li>Banana</li>
+                <li>Apple</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleInJs.js"></script>
+    <script>
+        // const student = {
+        //     name: 'SS',
+        //     ID: 7,
+        //     study: function(time){
+        //         console.log(time, 'study korteche')
+        //     }
+        // }
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+
+        for(const li of liCollection){
+            console.log(li);
+        }
+
+        // getElementByID
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits List Changed by JS';
+
+        // querySelectorAll
+        const someLi = document.querySelectorAll('#fruits-title');
+        for(const li of someLi){
+            console.log(li.innerText);
+        }
+        console.log('Why not me?')
+    </script>
+</body>
+</html>
