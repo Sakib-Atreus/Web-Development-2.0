@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Sheet</title>
+</head>
+
+<body>
+    <h2>1. What is DOM and what is the purpose of DOM?</h2>
+    <p>Ans: The DOM is known as Document object model and it allows the accessing of the documents like HTML. At the
+        most basic level, a website consists of an HTML and CSS document. The browser creates a representation of the
+        document known as Document Object Model (DOM). This document enables Javascript to access and manipulate the
+        elements and styles of a website. In order to change elements, we need to first get elements, we have to access
+        them. The model is built in a tree structure of objects and defines:
+
+    <ul>
+        <li>HTML elements as objects.</li>
+        <li>Properties and events of the HTML elements.</li>
+        <li>Methods to access the HTML elements.</li>
+    </ul>
+    </p>
+
+    <h2>2. How will you select HTML elements using DOM? Name the DOM methods.</h2>
+    <p>Ans: We know In CSS we can select HTML DOM element by tag name, in javascript we can also select HTML DOM element by HTML tag name using the "getElementsByTagName()" method. This method will take the tag name as a string and return an HTMLCollection of all the selected tags. <br> There are 5 ways in which you can select elements in a DOM using selectors.
+    <ol>
+        <li>getElementById()</li>
+        <li>getElementsByTagName()</li>
+        <li>getElementsByClassName()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+    </ol>
+    </p>
+
+    <h2>3. What is event bubble?</h2>
+    <p>Ans: Event bubbling is a way of event propagation in the HTML DOM. It relates to the order in which events are
+        propagated in nested elements. The principle of bubbling is simple. Whenever an event occurs on an element, at
+        first place it will run the handler on it, then its parent, then on other ancestors. We can add event handlers
+        to both the p and div elements to show an alert when clicked via the script.js file. <br>
+        When you click the p element, both the p and div elements will change color. This is because the event bubbles
+        up the DOM tree and triggers on both elements.</p>
+
+    <h2>4. What is a callback function and why will you use it?</h2>
+    <p>Ans: A simple explanation is a callback function is a function which is passed as a parameter to another function
+        and called when conditions are met. If you pass another function to a function as a parameter, it is called a
+        callback function. A callback function always has a specific action which is bound to a specific circumstance.
+        Therefore, a callback function is only called once a clearly defined operation has been performed. Event
+        handlers are a good example of a type of callback function. These are used in HTML elements such as buttons. An
+        event can be a mouse click that causes a callback function to be executed.</p>
+</body>
+
+</html>
