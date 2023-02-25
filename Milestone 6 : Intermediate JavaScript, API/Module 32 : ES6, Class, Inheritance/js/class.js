@@ -1,8 +1,8 @@
 class Instructor {
-    name;
-    designation = 'Web Course Instructor'
-    team = 'Web Team'
-    location;
+    // name;
+    // designation = 'Web Course Instructor'
+    // team = 'Web Team'
+    // location;
     constructor(name, location){
         this.name = name;
         this.location = location;
