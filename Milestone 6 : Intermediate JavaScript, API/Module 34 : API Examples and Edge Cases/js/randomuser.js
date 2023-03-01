@@ -12,6 +12,11 @@ const displayUser = bideshini => {
     const bideshiniGender = document.getElementById('gender');
     bideshiniGender.innerHTML = bideshini.results[0].gender;
     console.log(bideshini.results[0].gender);
+
+    const bideshiniPicture = document.getElementById('pic');
+    bideshiniPicture.src = "https://randomuser.me/api/portraits/med/women/32.jpg";
+
+    console.log(bideshini.results[0].picture);
 }
 
 randomUser();
