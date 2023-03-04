@@ -5,7 +5,7 @@ const loadUniverse = async () => {
     displayUniverse(data.data.tools.slice(0, 6));
     // console.log(data.data.tools);
 }
-
+// Universe Display Function
 const displayUniverse = (universes) => {
     const universesContainer = document.getElementById('universes-container');
     universesContainer.innerHTML = '';
@@ -44,7 +44,7 @@ const displayUniverse = (universes) => {
     });
     toggleSpinner(false);
 }
-
+// Toggle Function
 const toggleSpinner = isLoading => {
     const loaderSection = document.getElementById('loader');
     if(isLoading){
@@ -54,29 +54,25 @@ const toggleSpinner = isLoading => {
         loaderSection.classList.add('d-none');
     }
 }
-
+// Show All Button Function
 const showAll = async () => {
+    toggleSpinner(true);
     const url = `https://openapi.programming-hero.com/api/ai/tools`
     const res = await fetch(url);
     const data = await res.json();
-    
     displayUniverse(data.data.tools);
     const buttonShow = document.getElementById('btn-show-all');
     buttonShow.classList.add('d-none');
 }
-
-
-
-
-
+// Universe Details Function 
 const loadUniverseDetails = async id => {
     const url = `https://openapi.programming-hero.com/api/ai/tool/${id}`;
     const res = await fetch(url);
     const data = await res.json();
     displayUniverseDetails(data.data);
-    console.log(data.data);
+    // console.log(data.data);
 }
-
+// Universe Details Display Function
 const displayUniverseDetails = universe =>{
     console.log(universe.description);
     const universeDetails =  document.getElementById('single-modal-body');
@@ -87,13 +83,13 @@ const displayUniverseDetails = universe =>{
                 <h4 class="">${universe.description}</h4>
                 <div class="card-body d-flex justify-content-around text-center">
                     <div class="bg-danger p-2 rounded-2">
-                        <p>${universe.pricing[0].price}<br><span>${universe.pricing[0].plan}</span></p>
+                        <p>${universe.pricing[0].price ? universe.pricing[0].price : 'Free'}<br><span>${universe.pricing[0].plan ? universe.pricing[0].plan : 'Cost'}</span></p>
                     </div>
                     <div class="bg-warning p-2 rounded-2">
-                        <p>${universe.pricing[1].price}<br><span>${universe.pricing[1].plan}</span></p>
+                        <p>${universe.pricing[1].price ? universe.pricing[1].price : 'Free'}<br><span>${universe.pricing[1].plan ? universe.pricing[1].plan : 'Cost'}</span></p>
                     </div>
                     <div class="bg-info p-2 rounded-2">
-                        <p>${universe.pricing[2].price}<br><span>${universe.pricing[2].plan}</span></p>
+                        <p>${universe.pricing[2].price ? universe.pricing[2].price : 'Free'}<br><span>${universe.pricing[2].plan ? universe.pricing[2].plan : 'Cost'}</span></p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between">
@@ -130,8 +126,6 @@ const displayUniverseDetails = universe =>{
     `;
 }
 
-
-
-
+// Load Universe
 loadUniverse();
 
