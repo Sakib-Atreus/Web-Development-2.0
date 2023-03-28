@@ -3,7 +3,7 @@ const loadUniverse = async () => {
     const res = await fetch(url);
     const data = await res.json();
     displayUniverse(data.data.tools.slice(0, 6));
-    // console.log(data.data.tools);
+    console.log(data.data.tools[0].published_in);
 }
 // Universe Display Function
 const displayUniverse = (universes) => {
@@ -29,7 +29,7 @@ const displayUniverse = (universes) => {
                     <div class="d-flex justify-content-between">
                         <div>
                         <h5 class="card-title">${universe.name}</h5>
-                        <p><i class="fa-solid fa-calendar-days"></i> ${universe.published_in}</p>
+                        <p id="date"><i class="fa-solid fa-calendar-days"></i> ${universe.published_in}</p>
                         </div>
                         <div>
                         <button onclick="loadUniverseDetails('${universe.id}')" type="button" class="btn btn-primary rounded-5" data-bs-toggle="modal" data-bs-target="#universeDetailsModal">
@@ -124,6 +124,28 @@ const displayUniverseDetails = universe =>{
         </div>
     </div>
     `;
+}
+
+const data = () => {
+    const url = `https://openapi.programming-hero.com/api/ai/tools`
+    const res = fetch(url);
+    const data = res.json();
+    displayUniverse(data.data.tools.slice(0, 6));
+    console.log(data.data.tools[0].published_in);
+}
+
+const myFunction = () => {
+    document.getElementById('sortByDate').addEventListener('click', function(){
+        if(universe[0].published_in > universe[1].published_in){
+            return 1;
+        }
+        else if(universe[1].published_in > universe[2].published_in){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    })
 }
 
 // Load Universe
